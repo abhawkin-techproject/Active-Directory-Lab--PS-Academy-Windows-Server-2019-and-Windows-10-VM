@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Group Policy Results - PS Academy</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { color: #2c3e50; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f4f4f4; }
+  </style>
+</head>
+<body>
+  <h1>Group Policy Results</h1>
+  <p><strong>Computer:</strong> WIN10-CLIENT.psacademy.local</p>
+  <p><strong>Domain:</strong> psacademy.local</p>
+  <p><strong>Report Date:</strong> 2025-09-22</p>
+
+  <h2>Computer Settings</h2>
+  <table>
+    <tr><th>GPO</th><th>Status</th><th>Details</th></tr>
+    <tr><td>Default Domain Policy</td><td>Applied</td><td>Password Policy, Kerberos Policy</td></tr>
+    <tr><td>GPO - Mapped Drives</td><td>Applied</td><td>Network drive H: mapped to \\server01\home\%username%</td></tr>
+  </table>
+
+  <h2>User Settings (User: jdoe)</h2>
+  <table>
+    <tr><th>GPO</th><th>Status</th><th>Details</th></tr>
+    <tr><td>Default Domain Policy</td><td>Applied</td><td>Logon banner</td></tr>
+    <tr><td>GPO - Restrict Control Panel</td><td>Applied</td><td>Prohibit access to Control Panel and PC Settings</td></tr>
+    <tr><td>GPO - Mapped Drives</td><td>Applied</td><td>H: drive mapped</td></tr>
+  </table>
+
+  <h2>Summary</h2>
+  <p>The user <strong>jdoe</strong> in OU <em>DevSecOps</em> successfully received the following policies:</p>
+  <ul>
+    <li>Control Panel disabled</li>
+    <li>Home drive (H:) mapped</li>
+    <li>Roaming profile path: \\server01\profiles\jdoe</li>
+  </ul>
+</body>
+</html>
